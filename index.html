@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
   <!-- ===== Navigation ===== -->
-  <header class="nav" id="top">
+  <header class="nav">
     <div class="nav__inner">
       <a href="#top" class="nav__brand">L. Hajzoková</a>
       <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
@@ -39,11 +39,13 @@
   <!-- ===== Hero ===== -->
   <section class="hero">
     <div class="container hero__inner">
+      <!-- Optional: add a photo by placing "photo.jpg" in this folder and replacing the initials div below with:
+           <img class="hero__photo" src="photo.jpg" alt="Laura Hajzoková"> -->
+      <div class="hero__photo hero__photo--initials" aria-hidden="true">LH</div>
       <div class="hero__text">
-        <p class="hero__eyebrow">PhD Researcher · Computer Science</p>
         <h1>Laura Hajzoková</h1>
-        <p class="hero__affil">Saeys Lab · Ghent University &amp; VIB Center for Inflammation Research</p>
-        <p class="hero__tagline">Interpretable dimensionality reduction and representation learning for single-cell data.</p>
+        <p class="hero__eyebrow">PhD Student · Computer Science</p>
+        <p class="hero__affil">Saeys Lab | Ghent University and VIB Center for Inflammation Research</p>
         <div class="socials">
           <a href="mailto:laura.hajzokova@ugent.be" aria-label="Email">
             <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4 7v10h16V7l-8 5.2Z"/></svg>
@@ -55,17 +57,14 @@
             <svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24ZM8.2 18.1H6.6V7.4h1.6v10.7ZM7.4 6.3a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1Zm3 1.1h4.2c4 0 5.8 2.9 5.8 5.35 0 2.7-2.1 5.35-5.8 5.35h-4.2V7.4Zm1.6 1.45v7.8h2.5c3.6 0 4.4-2.7 4.4-3.9 0-1.95-1.24-3.9-4.3-3.9H12Z"/></svg>
           </a>
           <!-- TODO: replace with your LinkedIn profile URL -->
-          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/laura-hajzokov%C3%A1-46449a1a3/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
           </a>
-          <a href="https://www.saeyslab.org/" target="_blank" rel="noopener" aria-label="Lab website">
+          <a href="https://saeyslab.sites.vib.be/en" target="_blank" rel="noopener" aria-label="Lab website">
             <svg viewBox="0 0 24 24"><path d="M12 2 1 7.5 12 13l9-4.5V15h2V7.5L12 2Zm-6.5 9.4v4.1C5.5 17.9 8.4 20 12 20s6.5-2.1 6.5-4.5v-4.1L12 14.6l-6.5-3.2Z"/></svg>
           </a>
         </div>
       </div>
-      <!-- Optional: add a photo by placing "photo.jpg" in this folder and replacing the initials div below with:
-           <img class="hero__photo" src="photo.jpg" alt="Laura Hajzoková"> -->
-      <div class="hero__photo hero__photo--initials" aria-hidden="true">LH</div>
     </div>
   </section>
 
@@ -77,14 +76,15 @@
         <h2 class="section__title">About</h2>
         <div class="about">
           <div class="about__text">
-            <p>I am a second-year PhD student at <strong>Ghent University</strong> and <strong>VIB</strong> (Flemish Institute for Biotechnology), working in the Saeys Lab at the VIB Center for Inflammation Research. My research focuses on fundamental problems in <strong>interpretable dimensionality reduction</strong> for single-cell applications.</p>
-            <p>A central goal of my work is preserving the <strong>topology and geometry</strong> of data in lower-dimensional representations, as well as interpreting and analysing the latent space. My background is in applied mathematics, with a focus on machine learning, optimisation, statistics and mathematical modelling.</p>
+            <p>A third-year PhD student with strong mathematical background focusing on fundamental 
+              problems in <strong>interpretable dimensionality reduction and representation learning</strong> 
+              for single-cell applications. A central goal of my work is preserving the <strong>topology and geometry</strong> 
+              of data in lower-dimensional representations, as well as interpreting and analysing the latent space.</p>
             <ul class="tags">
               <li>Representation learning</li>
               <li>Dimensionality reduction</li>
-              <li>Geometric &amp; topological data analysis</li>
-              <li>Single-cell data</li>
-              <li>Statistics</li>
+              <li>Geometric &amp; topological deep learning</li>
+              <li>Single-cell omics</li>
             </ul>
           </div>
           <aside class="about__side">
@@ -122,20 +122,26 @@
             <ol class="timeline">
               <li>
                 <span class="timeline__date">2024 – present</span>
-                <h4>PhD in Computer Science</h4>
+                <h4>FWO Fellow | PhD in Computer Science</h4>
                 <p class="timeline__place">Saeys Lab, Ghent University / VIB Center for Inflammation Research, Ghent, Belgium</p>
-                <p>Focus on representation learning and dimensionality reduction.</p>
+                <p><b>Dissertation:</b> Towards explainable and explorable single-cell embeddings.</p>
               </li>
               <li>
-                <span class="timeline__date">2019 – 2024</span>
-                <h4>Integrated Master in Mathematics in Economy, Finance and Modelling</h4>
+                <span class="timeline__date">2022 – 2024</span>
+                <h4>Master in Mathematics of Economy, Finance and Modelling</h4>
                 <p class="timeline__place">Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Slovakia</p>
-                <p>Focus on machine learning, optimisation, statistics and mathematical modelling.</p>
+                <p><b>Dissertation:</b> Modelling of gene regulatory networks and stability analysis.</p>
+              </li>
+              <li>
+                <span class="timeline__date">2019 – 2022</span>
+                <h4>Bachelor in Mathematics of Economy and Finance</h4>
+                <p class="timeline__place">Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Slovakia</p>
+                <p><b>Dissertation:</b> Method of alternating projections for solving convex optimization problems.</p>
               </li>
             </ol>
           </div>
           <div>
-            <h3 class="subhead">Research stays &amp; summer schools</h3>
+            <h3 class="subhead">Summer schools and workshops</h3>
             <ol class="timeline">
               <li>
                 <span class="timeline__date">July 2026</span>
@@ -144,13 +150,8 @@
               </li>
               <li>
                 <span class="timeline__date">April 2025</span>
-                <h4>Learning Theory Course by Francis Bach</h4>
+                <h4>Learning Theory Course</h4>
                 <p class="timeline__place">KU Leuven, Belgium</p>
-              </li>
-              <li>
-                <span class="timeline__date">Oct 2023 – Feb 2024</span>
-                <h4>Erasmus+ Exchange</h4>
-                <p class="timeline__place">Ghent University, Belgium</p>
               </li>
               <li>
                 <span class="timeline__date">July 2023</span>
@@ -203,13 +204,13 @@
             <div class="talk__head"><span class="badge badge--oral">Oral</span><span class="talk__year">2024</span></div>
             <h4>ROBUST 2024</h4>
             <p class="talk__conf">International Conference in Statistics</p>
-            <p>Noise regulation in simulated gene regulatory cascades (Master's thesis).</p>
+            <p>Noise regulation in simulated gene regulatory cascades.</p>
           </article>
           <article class="talk">
             <div class="talk__head"><span class="badge badge--oral">Oral</span><span class="talk__year">2024</span></div>
             <h4>PROBASTAT 2024</h4>
             <p class="talk__conf">International Conference</p>
-            <p>Steady state analysis in gene regulatory networks (Master's thesis).</p>
+            <p>Steady state analysis in gene regulatory networks.</p>
           </article>
           <article class="talk">
             <div class="talk__head"><span class="badge badge--oral">Oral</span><span class="talk__year">2023</span></div>
@@ -227,30 +228,44 @@
             <div class="talk__head"><span class="badge badge--award">Award</span><span class="talk__year">2023</span></div>
             <h4>Student Scientific Conference 2023</h4>
             <p class="talk__conf">Comenius University in Bratislava</p>
-            <p>Award winner; also participated in the International Student Scientific Conference in the Czech Republic.</p>
+            <p>Fast numerical computation of Laplace transform inversion for convolved probability distributions</p>
           </article>
           <article class="talk">
             <div class="talk__head"><span class="badge badge--poster">Poster</span><span class="talk__year">2022</span></div>
             <h4>ROBUST 2022</h4>
             <p class="talk__conf">International Conference in Statistics</p>
-            <p>Method of alternating projections for finding the intersection of convex sets and its applications (Bachelor's thesis).</p>
+            <p>Method of alternating projections for finding the intersection of convex sets and its applications.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Work experience ===== -->
+    <!-- ===== Academic experience ===== -->
     <section id="experience" class="section">
       <div class="container">
-        <h2 class="section__title">Work Experience</h2>
+        <h2 class="section__title">Academic Experience</h2>
         <ol class="timeline timeline--wide">
           <li>
-            <span class="timeline__date">June 2022 – Sept 2024</span>
+            <span class="timeline__date">October 2024 – present</span>
+            <h4>Teaching Assistant</h4>
+            <p class="timeline__place">Ghent University, Belgium</p>
+            <ul class="bullets">
+              <li>Machine Learning (master course)</li>
+              <li>Introduction toMachine Learning (bachelor course)</li>
+            </ul>
+          </li>
+          <li>
+            <span class="timeline__date">Oct 2023 – Feb 2024</span>
+            <h4>Erasmus+ Exchange</h4>
+            <p class="timeline__place">Ghent University, Belgium</p>
+          </li>
+          <li>
+            <span class="timeline__date">January 2023 – Sept 2024</span>
             <h4>Research Intern</h4>
             <p class="timeline__place">Institute of Measurement Science, Slovak Academy of Sciences, Bratislava</p>
             <ul class="bullets">
-              <li>Developed an efficient algorithm for numerical inversion of the Laplace transform, with applications in probability and statistics.</li>
-              <li>Developed efficient computation methods for nanoscale material characterisation (joint project with the Czech Metrology Institute in Brno, Czech Republic).</li>
+              <li>Numerical methods for Laplace transform inversion with applications in probability and statistics.</li>
+              <li>Statistical methods for nanoscale material characterisation (collaborative project with the Czech Metrology Institute in Brno, Czech Republic).</li>
             </ul>
           </li>
         </ol>
@@ -290,20 +305,15 @@
             <span class="contact__label">Email</span>
             <span>laura.hajzokova@ugent.be</span>
           </a>
+          <a class="contact__item" href="https://www.linkedin.com/in/laura-hajzokov%C3%A1-46449a1a3/" target="_blank" rel="noopener">
+            <span class="contact__label">LinkedIn</span>
+            <span>Laura Hajzoková</span>
+          </a>
           <a class="contact__item" href="https://github.com/laura-hajzokova" target="_blank" rel="noopener">
             <span class="contact__label">GitHub</span>
             <span>github.com/laura-hajzokova</span>
           </a>
-          <a class="contact__item" href="https://orcid.org/0009-0007-3705-4474" target="_blank" rel="noopener">
-            <span class="contact__label">ORCID</span>
-            <span>0009-0007-3705-4474</span>
-          </a>
-          <!-- TODO: replace with your LinkedIn profile URL -->
-          <a class="contact__item" href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener">
-            <span class="contact__label">LinkedIn</span>
-            <span>Laura Hajzoková</span>
-          </a>
-          <a class="contact__item" href="https://www.saeyslab.org/" target="_blank" rel="noopener">
+          <a class="contact__item" href="https://saeyslab.sites.vib.be/en" target="_blank" rel="noopener">
             <span class="contact__label">Lab</span>
             <span>Saeys Lab (VIB–UGent)</span>
           </a>
